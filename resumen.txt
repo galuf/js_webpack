@@ -1,0 +1,26 @@
+Lo que estamos haciendo es crear un proyecto desde cero
+como si lo creara usando npx create-react-app <name>
+
+instalaciones hechas
+
+-> npm install webpack webpack-cli -D
+-> npm install react react-dom
+-> npm install @babel/core babel-loader @babel/preset-react -D
+los preset son reglas preestblesidas que ya tiene babel para hacer una configuracion
+un preset es un monton de plugins, el preset de react contiene la transformacion
+de jsx
+-> npm i --save-dev html-webpack-plugin
+este plugin te crea el index.html en la carpeta dist
+
+
+web pack nos empaketa las dependencias del sistema
+
+1. Entries -> Punto de entrada
+2. OutPut -> Lugar donde dejar el paquete generado
+3. Loaders -> Son el tunel por el cual pasan todas las dependencias 
+              que nosotros importemos, la unica dependencia que entiende
+              webpack son los archivos js
+4. plugings -> 
+webpack.config.js
+en esta carpeta lo que hacemos es generar el loader
+para que se pueda usar jsx de babel
